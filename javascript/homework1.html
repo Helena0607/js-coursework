@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        /* adding heading */
+        var demo = document.getElementById("demo");
+        var heading = document.createElement("h1");
+        var text = document.write("Choose your Marital Status")
+        heading.append(text);
+        element.append(heading);
+
+
+
+        /* adding unordered list */
+
+        /*var list_type = document.createElement("INPUT");
+        list_type.setAttribute("type", "radio");
+        document.body.appendChild(list_type);*/
+
+        var container = document.getElementById("demo");
+        var list = document.getElementById("marital-status");
+        var listData = ['Single', 'Married', 'Do not share'];
+        list.style.listStyle = "";
+        for (var i = 0; i < listData.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.innerText = listData[i];
+            list.appendChild(listItem);
+        }
+        container.appendChild(list)
+    </script>
+</head>
+
+<body>
+    <div id="demo">
+        <ul id="marital-status"></ul>
+    </div>
+</body>
+
+</html>
