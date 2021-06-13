@@ -21,7 +21,6 @@
         list_type.setAttribute("type", "radio");
         document.body.appendChild(list_type);*/
 
-        var container = document.getElementById("demo");
         var list = document.getElementById("marital-status");
         var listData = ['Single', 'Married', 'Do not share'];
         list.style.listStyle = "";
@@ -30,7 +29,7 @@
             listItem.innerText = listData[i];
             list.appendChild(listItem);
         }
-        container.appendChild(list)
+        demo.appendChild(list)
     </script>
 </head>
 
